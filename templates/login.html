@@ -13,6 +13,17 @@
             <i class="fab fa-twitter"></i>
             <span>Tweet Sentiment Insight</span>
         </header>
+
+        <!-- Flash messages for login feedback -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert {{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        <!-- Login form -->
         <form method="post" action="{{ url_for('login') }}" class="login-form">
             <div class="form-group">
                 <label for="username">Username:</label>

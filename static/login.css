@@ -10,8 +10,8 @@ body {
 
 .login-container {
     width: 100%;
-    max-width: 450px; /* Increased width */
-    padding: 30px; /* Increased padding */
+    max-width: 450px; /* Increased width for a better layout */
+    padding: 30px; /* Increased padding for better spacing */
     background: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -20,18 +20,18 @@ body {
 
 .login-header {
     font-size: 24px;
-    font-weight: bold; /* Bold the title */
+    font-weight: bold; /* Bold the title for emphasis */
     color: #333;
-    margin-bottom: 30px; /* More space below the header */
+    margin-bottom: 30px; /* More space below the header for clarity */
 }
 
 .login-header .fa-twitter {
-    color: #1DA1F2; /* Twitter's blue color */
+    color: #1DA1F2; /* Twitter's blue color for the icon */
     margin-right: 10px;
 }
 
 .form-group {
-    text-align: left; /* Align text to the left */
+    text-align: left; /* Align text to the left for labels and inputs */
     margin-bottom: 20px; /* Increased spacing between fields */
 }
 
@@ -46,15 +46,39 @@ input[type="text"], input[type="password"] {
 
 input[type="submit"] {
     width: 100%;
-    padding: 15px; /* Larger button */
+    padding: 15px; /* Larger button for easier interaction */
     background-color: #1DA1F2; /* Twitter blue */
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 18px; /* Larger font size */
+    font-size: 18px; /* Larger font size for readability */
+    font-weight: bold; /* Bold text for the button */
 }
 
 input[type="submit"]:hover {
-    background-color: #1991DA; /* Darker shade on hover */
+    background-color: #1991DA; /* Darker shade on hover for visual feedback */
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+    width: 90%; /* Ensures alerts are not too wide */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alert.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
 }
